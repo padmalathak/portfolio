@@ -1,7 +1,7 @@
 import React from "react";
 
 function Timeline() {
-  return <div>Timeline</div>;
+  return <section>Timeline</section>;
 }
 
 export default Timeline;

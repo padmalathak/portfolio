@@ -1,3 +1,5 @@
+@use "Styles/partials/variables" as *;
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -6,4 +8,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bg-color-dark;
+  color: $text-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
