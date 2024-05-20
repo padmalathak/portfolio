@@ -1,7 +1,5 @@
-import React from "react";
-
 function Links() {
-  return <div>links</div>;
+  return <div className="links">links</div>;
 }
 
 export default Links;
