@@ -2,6 +2,8 @@ import "./Navbar.scss";
 import { motion } from "framer-motion";
 import linkedIn from "../../assets/logo/linkedin.svg";
 import github from "../../assets/logo/github.svg";
+import instagram from "../../assets/logo/instagram.png";
+
 import Sidebar from "../Sidebar/Sidebar";
 
 function Navbar() {
@@ -22,7 +24,10 @@ function Navbar() {
             <img src={linkedIn} alt="linkedin" className="logo" />
           </a>
           <a href="#">
-            <img src={github} alt="linkedin" className="logo" />
+            <img src={github} alt="github" className="logo" />
+          </a>
+          <a href="#">
+            <img src={instagram} alt="instagram" className="logo" />
           </a>
         </div>
       </div>

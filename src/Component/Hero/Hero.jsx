@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import Sidebar from "../Sidebar/Sidebar";
+import "./Hero.scss";
 
 function Hero() {
   return (
-    <section>
+    <section id="Homepage">
       <Navbar />
+      <div className="hero">Hero</div>
     </section>
   );
 }
