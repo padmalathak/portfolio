@@ -52,12 +52,21 @@ function Timeline() {
                 whileInView="visible"
               >
                 <div class="timeline-content">
-                  <h3 class="date">20th may, 2010 </h3>
-                  <h1>Heading 2</h1>
+                  <h3 class="date">March, 2020 </h3>
+                  <h1>Honeywell- Software Engineer</h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur tempora ab laudantium voluptatibus aut eos
-                    placeat laborum, quibusdam exercitationem labore.
+                    Having extensive experience in all aspects of the software
+                    development life cycle, I have effectively managed multiple
+                    stages such as defining requirements, designing prototypes,
+                    implementing interfaces, conducting thorough testing, and
+                    ensuring ongoing maintenance.
+                    <p>
+                      Involved in designing and implementing Takeoff and
+                      Landing(TOLD)
+                    </p>
+                    <p className="timeline__tech">
+                      Tech Stack : C,C++, MERN Stack
+                    </p>
                   </p>
                 </div>
               </motion.li>
@@ -68,13 +77,21 @@ function Timeline() {
                 whileInView="visible"
               >
                 <div class="timeline-content">
-                  <h3 class="date">20th may, 2010</h3>
-                  <h1>Heading 3</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur tempora ab laudantium voluptatibus aut eos
-                    placeat laborum, quibusdam exercitationem labore.
-                  </p>
+                  <h3 class="date">April 2018</h3>
+                  <h1>Temenos PVT Ltd- Software Engineer</h1>
+                  <ul>
+                    <li className="list-disc">
+                      {" "}
+                      Analyzed clients' requirements to develop products on the
+                      T24 core module platform, resulting in the successful
+                      implementation of new functionalities
+                    </li>
+                    <li className="list-disc">
+                      Possesses a strong understanding of payment operations and
+                      the requirements from the viewpoint of a customer at a
+                      bank.
+                    </li>
+                  </ul>
                 </div>
               </motion.li>
               <motion.li
@@ -84,12 +101,16 @@ function Timeline() {
                 whileInView="visible"
               >
                 <div class="timeline-content">
-                  <h3 class="date">20th may, 2010</h3>
-                  <h1>Heading 4</h1>
+                  <h3 class="date">Dec 2017</h3>
+                  <h1>PhilipsTv/TpVision - Software Engineer</h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur tempora ab laudantium voluptatibus aut eos
-                    placeat laborum, quibusdam exercitationem labore.
+                    Engineered and deployed a custom Android TV application for
+                    Philips TV
+                  </p>
+                  <p>
+                    Played a pivotal role in a major software release that
+                    expanded the product's market reach and received positive
+                    user feedback.
                   </p>
                 </div>
               </motion.li>

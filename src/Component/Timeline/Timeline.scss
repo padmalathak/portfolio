@@ -45,6 +45,10 @@
   margin: 0 auto;
   margin-right: 2rem;
   position: relative;
+
+  &__tech {
+    letter-spacing: 2px;
+  }
 }
 .timeline:before {
   content: "";
