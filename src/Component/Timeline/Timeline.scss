@@ -110,7 +110,8 @@
   .timeline__list {
     width: 50%;
     position: relative;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
+    margin-bottom: -4rem;
   }
   .timeline__list:nth-child(odd) {
     float: left;
@@ -142,6 +143,7 @@
     transform: translate(-50%, -50%);
     left: -30px;
   }
+
   .timeline-content .date {
     position: absolute;
     top: -30px;
@@ -158,5 +160,11 @@
   @include tablet {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+.tce {
+  @include tablet {
+    margin-top: 5rem;
   }
 }

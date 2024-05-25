@@ -49,6 +49,10 @@ function Hero() {
           <motion.p className="hero__description" variants={textVariants}>
             Dedicated and solutions-oriented Software development engineer with
             3 years of experience in full software development life cycle.
+            <p>
+              Holder of prestigious awards such as the Outstanding Engineer
+              Award, Top Flyer Award , Gold and Bravo Awrds
+            </p>
           </motion.p>
           <motion.div className="hero__buttons" variants={textVariants}>
             <motion.button className="hero__button" variants={textVariants}>

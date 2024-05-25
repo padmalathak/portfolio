@@ -2,6 +2,15 @@ import "./Timeline.scss";
 import { motion } from "framer-motion";
 
 function Timeline() {
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5,
+      },
+    },
+  };
   const variants = {
     visible: { opacity: 1, x: -30, transition: { duration: 0.5 } },
     hidden: { opacity: 0, x: -200 },
@@ -17,13 +26,13 @@ function Timeline() {
         <h3 className="timelines__heading">My Timeline</h3>
         <div class="container">
           <div class="timeline">
-            <ul>
-              <motion.li
-                className="timeline__list"
-                variants={variants}
-                initial="hidden"
-                whileInView="visible"
-              >
+            <motion.ul
+              variants={container}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <motion.li className="timeline__list" variants={variants}>
                 <div class="timeline-content">
                   <h3 class="date">10th may, 2024 - 95%</h3>
                   <h1>BrainStation-Software Engineering Student</h1>
@@ -48,8 +57,6 @@ function Timeline() {
               <motion.li
                 className="timeline__list right"
                 variants={rightVariants}
-                initial="hidden"
-                whileInView="visible"
               >
                 <div class="timeline-content">
                   <h3 class="date">March, 2020 </h3>
@@ -70,12 +77,7 @@ function Timeline() {
                   </p>
                 </div>
               </motion.li>
-              <motion.li
-                className="timeline__list"
-                variants={variants}
-                initial="hidden"
-                whileInView="visible"
-              >
+              <motion.li className="timeline__list" variants={variants}>
                 <div class="timeline-content">
                   <h3 class="date">April 2018</h3>
                   <h1>Temenos PVT Ltd- Software Engineer</h1>
@@ -91,14 +93,15 @@ function Timeline() {
                       the requirements from the viewpoint of a customer at a
                       bank.
                     </li>
+                    <p className="timeline__tech">
+                      Tech Stack : C,C++, MERN Stack
+                    </p>
                   </ul>
                 </div>
               </motion.li>
               <motion.li
                 className="timeline__list right"
                 variants={rightVariants}
-                initial="hidden"
-                whileInView="visible"
               >
                 <div class="timeline-content">
                   <h3 class="date">Dec 2017</h3>
@@ -112,9 +115,33 @@ function Timeline() {
                     expanded the product's market reach and received positive
                     user feedback.
                   </p>
+                  <p className="timeline__tech">
+                    Tech Stack : C,C++, MERN Stack
+                  </p>
                 </div>
               </motion.li>
-            </ul>
+              <motion.li className="timeline__list tce" variants={variants}>
+                <div class="timeline-content ">
+                  <h3 class="date">
+                    Aptil 2017 - Bachelor's in Electronics and Communications
+                  </h3>
+                  <h1>Thiagarajar College of Engineering</h1>
+                  <ul>
+                    <li className="list-disc">
+                      {" "}
+                      Analyzed clients' requirements to develop products on the
+                      T24 core module platform, resulting in the successful
+                      implementation of new functionalities
+                    </li>
+                    <li className="list-disc">
+                      Possesses a strong understanding of payment operations and
+                      the requirements from the viewpoint of a customer at a
+                      bank.
+                    </li>
+                  </ul>
+                </div>
+              </motion.li>
+            </motion.ul>
           </div>
         </div>
       </div>
