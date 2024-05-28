@@ -1,6 +1,7 @@
 import "./Portfolio.scss";
-import { motion } from "framer-motion";
+import { animate, motion, useInView } from "framer-motion";
 import people from "../../assets/imgs/people.webp";
+import { useRef } from "react";
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -17,11 +18,34 @@ const draw = {
   },
 };
 
+const variants = {
+  initial: {
+    x: -500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
 function Portfolio() {
+  const ref = useRef();
+  const isInView = useInView(ref, { margin: "-100px" });
   return (
     <section id="Portfolio" className="Portfolio">
-      <motion.div className="services">
-        <motion.div className="textContainer">
+      <motion.div
+        className="services"
+        variants={variants}
+        initial="initial"
+        ref={ref}
+        animate={isInView && "animate"}
+      >
+        <motion.div className="textContainer" variants={variants}>
           <p>
             Along with my technical skills, I also bring
             <br /> warmth, a positive attitude and a cute smile to every team I
@@ -29,7 +53,7 @@ function Portfolio() {
           </p>
           <hr />
         </motion.div>
-        <motion.div className="titleContainer">
+        <motion.div className="titleContainer" variants={variants}>
           <div className="title">
             <img src={people} alt="" />
             <h1>
@@ -43,7 +67,7 @@ function Portfolio() {
             <button>WHAT WE DO?</button>
           </div> */}
         </motion.div>
-        <motion.div className="listContainer">
+        <motion.div className="listContainer" variants={variants}>
           <motion.div
             className="box"
             whileHover={{ background: "lightgray", color: "black" }}
