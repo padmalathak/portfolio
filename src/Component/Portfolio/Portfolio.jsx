@@ -31,16 +31,10 @@ function Portfolio() {
           <div className="title">
             <img src="/people.webp" alt="" />
             <h1>
-              <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
+              <motion.b whileHover={{ color: "orange" }}>Recent</motion.b> Works
             </h1>
           </div>
-          <div className="title">
-            <h1>
-              <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
-              Business.
-            </h1>
-            <button>WHAT WE DO?</button>
-          </div>
+          <div className="title">{/* <button>WHAT WE DO?</button> */}</div>
         </motion.div>
         <motion.div className="listContainer">
           <motion.div
