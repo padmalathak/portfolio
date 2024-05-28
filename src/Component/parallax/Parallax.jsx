@@ -14,7 +14,7 @@ function Parallax() {
   const ystr = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section>
+    <section id="Experience">
       <div className="parallax" ref={ref}>
         <motion.h1 className="parallax__title" style={{ y: yText }}>
           Experience

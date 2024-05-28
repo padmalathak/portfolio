@@ -21,7 +21,7 @@ function Timeline() {
     hidden: { opacity: 0, x: 200 },
   };
   return (
-    <section id="Experience">
+    <div>
       <div className="timelines">
         <h3 className="timelines__heading">My Timeline</h3>
         <div class="container">
@@ -127,17 +127,12 @@ function Timeline() {
                   </h3>
                   <h1>Thiagarajar College of Engineering</h1>
                   <ul>
-                    <li className="list-disc">
+                    {/* <li className="list-disc">
                       {" "}
                       Analyzed clients' requirements to develop products on the
                       T24 core module platform, resulting in the successful
                       implementation of new functionalities
-                    </li>
-                    <li className="list-disc">
-                      Possesses a strong understanding of payment operations and
-                      the requirements from the viewpoint of a customer at a
-                      bank.
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </motion.li>
@@ -145,7 +140,7 @@ function Timeline() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
