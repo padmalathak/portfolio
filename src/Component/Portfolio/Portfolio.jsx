@@ -1,5 +1,6 @@
 import "./Portfolio.scss";
 import { motion } from "framer-motion";
+import people from "../../assets/imgs/people.webp";
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -22,26 +23,32 @@ function Portfolio() {
       <motion.div className="services">
         <motion.div className="textContainer">
           <p>
-            I focus on helping your brand grow
-            <br /> and move forward
+            Along with my technical skills, I also bring
+            <br /> warmth, a positive attitude and a cute smile to every team I
+            join.
           </p>
           <hr />
         </motion.div>
         <motion.div className="titleContainer">
           <div className="title">
-            <img src="/people.webp" alt="" />
+            <img src={people} alt="" />
             <h1>
-              <motion.b whileHover={{ color: "orange" }}>Recent</motion.b> Works
+              <motion.b whileHover={{ color: "orange" }}>
+                <b>Recent</b>
+              </motion.b>{" "}
+              Works
             </h1>
           </div>
-          <div className="title">{/* <button>WHAT WE DO?</button> */}</div>
+          {/* <div className="title">
+            <button>WHAT WE DO?</button>
+          </div> */}
         </motion.div>
         <motion.div className="listContainer">
           <motion.div
             className="box"
             whileHover={{ background: "lightgray", color: "black" }}
           >
-            <h2>Branding</h2>
+            <h2>eHub</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               libero enim nisi aliquam consectetur expedita magni eius ex
@@ -54,7 +61,7 @@ function Portfolio() {
             className="box"
             whileHover={{ background: "lightgray", color: "black" }}
           >
-            <h2>Branding</h2>
+            <h2>InStock</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               libero enim nisi aliquam consectetur expedita magni eius ex
@@ -67,7 +74,7 @@ function Portfolio() {
             className="box"
             whileHover={{ background: "lightgray", color: "black" }}
           >
-            <h2>Branding</h2>
+            <h2>eCommerce</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               libero enim nisi aliquam consectetur expedita magni eius ex
@@ -80,7 +87,7 @@ function Portfolio() {
             className="box"
             whileHover={{ background: "lightgray", color: "black" }}
           >
-            <h2>Branding</h2>
+            <h2>Quotes</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               libero enim nisi aliquam consectetur expedita magni eius ex
