@@ -54,6 +54,15 @@ function Hero() {
               Award, Top Flyer Award , Gold and Bravo Awrds
             </p>
           </motion.p>
+          <motion.ul className="skills">
+            <motion.li className="skills__list">C</motion.li>
+            <motion.li className="skills__list"> C++</motion.li>
+            <motion.li className="skills__list">React</motion.li>
+            <motion.li className="skills__list">HTML,CSS</motion.li>
+            <motion.li className="skills__list">SASS</motion.li>
+            <motion.li className="skills__list">JS</motion.li>
+            <motion.li className="skills__list">NodeJS</motion.li>
+          </motion.ul>
           <motion.div className="hero__buttons" variants={textVariants}>
             <motion.button className="hero__button" variants={textVariants}>
               See the latest Works
