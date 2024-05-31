@@ -74,14 +74,19 @@
 }
 
 .skills {
-  display: flex;
-  gap: 0.5rem;
-  font-size: 15px;
-  margin-bottom: 2rem;
-  &__list {
-    background-color: grey;
-    padding: 0.5rem;
-    color: black;
-    border-radius: 5px;
+  display: none;
+
+  @include tablet {
+    display: flex;
+
+    gap: 0.5rem;
+    font-size: 15px;
+    margin-bottom: 2rem;
+    &__list {
+      background-color: grey;
+      padding: 0.3rem;
+      color: black;
+      border-radius: 5px;
+    }
   }
 }

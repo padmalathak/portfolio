@@ -1,3 +1,4 @@
+@use "../../Styles/partials/mixins" as *;
 .portfolio {
   position: relative;
 
@@ -5,15 +6,18 @@
     position: sticky;
     top: 0;
     left: 0;
-    padding-top: 50px;
     text-align: center;
-    color: orange;
-    font-size: 36px;
+    color: rgb(148, 85, 177);
+    padding-top: calc(10px);
+    font-size: 24px;
 
-    // @include mobile {
-    //   padding-top: calc(100vh - 100px);
-    //   font-size: 24px;
-    // }
+    @include tablet {
+      padding-top: 300px;
+      font-size: 36px;
+    }
+    @include desktop {
+      padding-top: 0;
+    }
 
     .progressBar {
       height: 10px;
@@ -34,66 +38,75 @@
       height: 100%;
       margin: auto;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 50px;
 
-      //   @include mobile {
-      //     flex-direction: column;
-      //   }
+      @include tablet {
+        flex-direction: row;
+      }
 
       .imageContainer {
         flex: 1;
-        height: 50%;
-
+        width: 100%;
+        max-height: 300px;
         // @include mobile {
         //   width: 100%;
         //   max-height: 300px;
         // }
+        @include tablet {
+          height: 50%;
+        }
 
         img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain;
 
-          //   @include mobile {
-          //     object-fit: contain;
-          //   }
+          @include tablet {
+            object-fit: cover;
+          }
         }
       }
 
       .textContainer {
         flex: 1;
+        transform: none !important;
         display: flex;
         flex-direction: column;
         gap: 30px;
 
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+
         // @include mobile {
-        //   transform: none !important;
+        //
         //   padding: 10px;
         //   align-items: center;
         //   text-align: center;
         // }
 
         h2 {
-          font-size: 72px;
+          font-size: 36px;
 
-          //   @include mobile {
-          //     font-size: 36px;
-          //   }
+          @include tablet {
+            font-size: 72px;
+          }
         }
 
         p {
           color: gray;
-          font-size: 20px;
+          font-size: 16px;
 
-          //   @include mobile {
-          //     font-size: 16px;
-          //   }
+          @include tablet {
+            font-size: 20px;
+          }
         }
 
         button {
-          background-color: orange;
+          background-color: rgb(148, 85, 177);
           border: none;
           border-radius: 10px;
           padding: 10px;
