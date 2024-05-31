@@ -6,6 +6,7 @@ import Contact from "../../Component/Contact/Contact";
 import About from "../../Component/About/About";
 import OtherInterests from "../../Component/OtherInterests/OtherInterests";
 import Parallax from "../../Component/parallax/Parallax";
+import Featured from "../../Component/Featured/Featured";
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <Parallax />
       <Timeline />
       <Portfolio />
+      <Featured />
       <Contact />
       <About />
       <OtherInterests />
