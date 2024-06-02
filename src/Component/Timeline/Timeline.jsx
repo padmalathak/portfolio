@@ -84,15 +84,11 @@ function Timeline() {
                   <ul>
                     <li className="list-disc">
                       {" "}
-                      Analyzed clients' requirements to develop products on the
-                      T24 core module platform, resulting in the successful
-                      implementation of new functionalities
+                      Utilized technical skills in software deveopment to
+                      optimize T24 online services, and core banking-connected
+                      interfaces, leading to a 20% increase in productivity.
                     </li>
-                    <li className="list-disc">
-                      Possesses a strong understanding of payment operations and
-                      the requirements from the viewpoint of a customer at a
-                      bank.
-                    </li>
+                    <li className="list-disc"></li>
                     <p className="timeline__tech">
                       Tech Stack : C,C++, MERN Stack
                     </p>
