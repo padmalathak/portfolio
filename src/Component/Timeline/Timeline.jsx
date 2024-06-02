@@ -129,14 +129,18 @@ function Timeline() {
                   <h3 class="date">
                     Aptil 2017 - Bachelor's in Electronics and Communications
                   </h3>
-                  <h1>Thiagarajar College of Engineering</h1>
+                  <h1>Thiagarajar College of Engineering - Bachelor's</h1>
                   <ul>
-                    {/* <li className="list-disc">
+                    <li className="list-disc">
                       {" "}
-                      Analyzed clients' requirements to develop products on the
-                      T24 core module platform, resulting in the successful
-                      implementation of new functionalities
-                    </li> */}
+                      Highly motivated Electronics and Communications
+                      Engineering graduate with a strong background in{" "}
+                      <b className="list__bold">
+                        algorithm development, FPGA-based system design, and IoT
+                      </b>
+                      applications. Seeking an opportunity to leverage my skills
+                      and knowledge in a challenging engineering role.
+                    </li>
                   </ul>
                 </div>
               </motion.li>
