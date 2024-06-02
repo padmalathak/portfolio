@@ -95,9 +95,7 @@ function Timeline() {
                       <b className="list__bold">2 hours</b>, demonstrating
                       strong teamwork and commitment to meeting deadlines
                     </li>
-                    <p className="timeline__tech">
-                      Tech Stack : C,C++, MERN Stack
-                    </p>
+                    <p className="timeline__tech">Tech Stack : JBC, Jbase</p>
                   </ul>
                 </div>
               </motion.li>
@@ -108,18 +106,22 @@ function Timeline() {
                 <div class="timeline-content">
                   <h3 class="date">Dec 2017</h3>
                   <h1>PhilipsTv/TpVision - Software Engineer</h1>
-                  <p>
-                    Engineered and deployed a custom Android TV application for
-                    Philips TV
-                  </p>
-                  <p>
-                    Played a pivotal role in a major software release that
-                    expanded the product's market reach and received positive
-                    user feedback.
-                  </p>
-                  <p className="timeline__tech">
-                    Tech Stack : C,C++, MERN Stack
-                  </p>
+                  <ul>
+                    <li className="list-disc">
+                      Engineered and deployed a custom Android TV application
+                      for Philips TV leading to a{" "}
+                      <b className="list__bold">30% increase</b> in user
+                      engagement
+                    </li>
+                    <li className="list-disc">
+                      Played a pivotal role in a major software release that
+                      expanded the product's market reach and received positive
+                      user feedback.
+                    </li>
+                    <li className="timeline__tech">
+                      Tech Stack : C,C++, Android NDK
+                    </li>
+                  </ul>
                 </div>
               </motion.li>
               <motion.li className="timeline__list tce" variants={variants}>
