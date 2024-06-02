@@ -86,9 +86,15 @@ function Timeline() {
                       {" "}
                       Utilized technical skills in software deveopment to
                       optimize T24 online services, and core banking-connected
-                      interfaces, leading to a 20% increase in productivity.
+                      interfaces, leading to a{" "}
+                      <b className="list__bold">20% increase</b> in
+                      productivity.
                     </li>
-                    <li className="list-disc"></li>
+                    <li className="list-disc">
+                      Closed a critical software issue within{" "}
+                      <b className="list__bold">2 hours</b>, demonstrating
+                      strong teamwork and commitment to meeting deadlines
+                    </li>
                     <p className="timeline__tech">
                       Tech Stack : C,C++, MERN Stack
                     </p>
