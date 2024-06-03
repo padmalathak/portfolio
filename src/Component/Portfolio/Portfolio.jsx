@@ -37,7 +37,7 @@ function Portfolio() {
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
   return (
-    <section id="Portfolio" className="Portfolio">
+    <div id="Portfolio" className="Portfolio">
       <motion.div
         className="services"
         variants={variants}
@@ -93,11 +93,15 @@ function Portfolio() {
             className="box"
             whileHover={{ background: "lightgray", color: "black" }}
           >
-            <h2>Jasleen Kaur</h2>
+            <h2>Jasleen Kaur - Associate Educator BrainStation</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              libero enim nisi aliquam consectetur expedita magni eius ex
-              corrupti animi!
+              I had the pleasure of working with Padmalatha as their Educator
+              during their time at Brainstation. She consistently demonstrated
+              exceptional skills in the Web development course, and their
+              dedication to all the projects and tasks was truly impressive.
+              Their ability to deliver high-quality work under tight deadlines
+              significantly contributed to our successful completion of the
+              Bootcamp.
             </p>
             <button>Go</button>
           </motion.div>
@@ -105,11 +109,13 @@ function Portfolio() {
             className="box"
             whileHover={{ background: "lightgray", color: "black" }}
           >
-            <h2>eCommerce</h2>
+            <h2>Abinaya R.M - Test Engineer Temenos</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              libero enim nisi aliquam consectetur expedita magni eius ex
-              corrupti animi!
+              Padma and I worked together on several projects, and I was lucky
+              to call her my coworker. She consistently gave 100 percent effort
+              to the team and played a significant role in ensuring that we
+              completed assignments on time. She used to be calm and productive
+              during intense crunch periods. Such an amazing team player.
             </p>
             <button>Go</button>
           </motion.div>
@@ -117,17 +123,17 @@ function Portfolio() {
             className="box"
             whileHover={{ background: "lightgray", color: "black" }}
           >
-            <h2>Quotes</h2>
+            <h2>Dinesh Kumar - Project Manager Honeywell</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              libero enim nisi aliquam consectetur expedita magni eius ex
-              corrupti animi!?
+              Padma is known for her versatility. Any challenging task thrown at
+              her will be solved in no time. Her attitude and energy is always
+              inspired by team. She has been always a value adding resource.
             </p>
             <button>Go</button>
           </motion.div>
         </motion.div>
       </motion.div>
-    </section>
+    </div>
   );
 }
 
