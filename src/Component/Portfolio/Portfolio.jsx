@@ -60,7 +60,7 @@ function Portfolio() {
               <motion.b whileHover={{ color: "orange" }}>
                 <b>Recent</b>
               </motion.b>{" "}
-              Works
+              Testimonials
             </h1>
           </div>
           {/* <div className="title">
@@ -72,11 +72,20 @@ function Portfolio() {
             className="box"
             whileHover={{ background: "lightgray", color: "black" }}
           >
-            <h2>eHub</h2>
+            <h2>Murali Krishnan T.M - Honeywell Tech Specialist</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              libero enim nisi aliquam consectetur expedita magni eius ex
-              corrupti animi!
+              Padma had been working as a software engineer with the Flight
+              Management system. I have worked with her closely. I have always
+              found her as extremely competent colleague, who is very good in
+              C++, design patterns, data structures, algorithms, debugging
+              skills, and domain knowledge of the Flight Management Systems. She
+              is a quick learner and possess great leadership capabilities. She
+              is a very good team player and is able to gel well with the team
+              and ensure the project is completed on time with high quality.
+              Many a times she has organized, participated and won various out
+              of work initiatives at Honeywell too. I have observed her getting
+              into completely new assignments, and has demonstrated ownership
+              and productivity in a very short turn around time
             </p>
             <button>Go</button>
           </motion.div>
@@ -84,7 +93,7 @@ function Portfolio() {
             className="box"
             whileHover={{ background: "lightgray", color: "black" }}
           >
-            <h2>InStock</h2>
+            <h2>Jasleen Kaur</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               libero enim nisi aliquam consectetur expedita magni eius ex
