@@ -10,14 +10,17 @@ function Contact() {
             <span>padmalatha</span>
           </div>
           <div className="item">
-            <h2>Mail</h2>
-            <span>padmalatha</span>
+            <h2>Adress</h2>
+            <span>Langley,BC</span>
           </div>
           <div className="item">
-            <h2>Mail</h2>
-            <span>padmalatha</span>
+            <h2>Phone</h2>
+            <span>+16047247962</span>
           </div>
         </div>
+      </div>
+      <div className="formContainer">
+        <form></form>
       </div>
     </section>
   );
