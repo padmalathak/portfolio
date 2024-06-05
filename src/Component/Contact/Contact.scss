@@ -54,12 +54,24 @@
       flex-direction: column;
       gap: 20px;
 
-      input {
+      input,
+      textarea {
         padding: 20px;
         // margin-bottom: 2rem;
         background-color: transparent;
         border: 1px solid white;
         // display: block;
+      }
+
+      button {
+        border-radius: 10px;
+        background-color: rgb(148, 85, 177);
+        padding: 15px;
+        color: black;
+        font-size: 20px;
+        &:hover {
+          background-color: white;
+        }
       }
     }
   }
