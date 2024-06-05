@@ -1,5 +1,4 @@
-import React from "react";
-
+import "./Contact.scss";
 function Contact() {
   return <section id="Contact">Contact</section>;
 }
