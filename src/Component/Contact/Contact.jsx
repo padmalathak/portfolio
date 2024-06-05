@@ -20,7 +20,12 @@ function Contact() {
         </div>
       </div>
       <div className="formContainer">
-        <form></form>
+        <form>
+          <input type="text" required placeholder="Name" />
+          <input type="email" required placeholder="Email" />
+          <textarea rows={8} placeholder="Message" />
+          <button>Submit</button>
+        </form>
       </div>
     </section>
   );
