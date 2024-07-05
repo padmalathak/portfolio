@@ -5,10 +5,12 @@ import Portfolio from "../../Component/Portfolio/Portfolio";
 import Contact from "../../Component/Contact/Contact";
 import Parallax from "../../Component/parallax/Parallax";
 import Featured from "../../Component/Featured/Featured";
+import Cursor from "../../Component/Cursor/Cursor";
 
 function HomePage() {
   return (
     <div>
+      <Cursor />
       <Hero />
       <Parallax />
       <Timeline />
