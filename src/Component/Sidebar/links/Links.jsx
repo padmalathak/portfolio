@@ -24,14 +24,7 @@ function Links() {
       opactity: 0,
     },
   };
-  const items = [
-    "Homepage",
-    "Experience",
-    "Portfolio",
-    "Contact",
-    "About",
-    "Other Interests",
-  ];
+  const items = ["Homepage", "Experience", "Portfolio", "Contact"];
 
   return (
     <motion.div className="links" variants={variants}>

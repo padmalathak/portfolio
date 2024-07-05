@@ -56,8 +56,8 @@ function Hero() {
             PADMA - Software Developer
           </motion.h1>
           <motion.p className="hero__description" variants={textVariants}>
-            [“hip”,”hip”](hip hip array!)😁 Well,come ! I have 3 years of work
-            experience as a software developer. And Cookie💻 is my favorite
+            [“hip”,”hip”](hip hip array!)😁 Well,come ! <br></br>3 years of work
+            experience as a software developer and Cookie💻 is my favorite
             snack! Why are programmers always sitting down?
             <p>
               Holder of prestigious awards such as the Outstanding Engineer
