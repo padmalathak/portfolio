@@ -17,8 +17,8 @@ function HomePage() {
       <Portfolio />
       <Featured />
       <Contact />
-      <About />
-      <OtherInterests />
+      {/* <About />
+      <OtherInterests /> */}
     </div>
   );
 }
