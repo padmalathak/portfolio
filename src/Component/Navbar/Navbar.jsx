@@ -20,13 +20,25 @@ function Navbar() {
           Padma Tech
         </motion.span>
         <div className="socials">
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/padmalathakrish/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={linkedIn} alt="linkedin" className="logo" />
           </a>
-          <a href="#">
+          <a
+            href="https://github.com/padmalathak"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={github} alt="github" className="logo" />
           </a>
-          <a href="#">
+          <a
+            href="https://leetcode.com/u/padmaviki/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <img src={instagram} alt="instagram" className="logo" />
           </a>
         </div>

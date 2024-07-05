@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Hero.scss";
+import resume from "../../assets/Files/PadmaResume.pdf";
 
 import scroll from "../../assets/icons/scroll.png";
 import passport from "../../assets/imgs/passport.png";
@@ -29,6 +30,14 @@ const textVariants = {
   },
 };
 
+// Function on Click
+const downloadResume = () => {
+  const link = document.createElement("a");
+  link.href = resume;
+  link.download = `PadmaResume.pdf`;
+  link.click();
+};
+
 function Hero() {
   return (
     <section id="Homepage">
@@ -47,8 +56,9 @@ function Hero() {
             PADMA - Software Developer
           </motion.h1>
           <motion.p className="hero__description" variants={textVariants}>
-            Dedicated and solutions-oriented Software development engineer with
-            3 years of experience in full software development life cycle.
+            [“hip”,”hip”](hip hip array!)😁 Well,come ! I have 3 years of work
+            experience as a software developer. And Cookie💻 is my favorite
+            snack! Why are programmers always sitting down?
             <p>
               Holder of prestigious awards such as the Outstanding Engineer
               Award, Top Flyer Award , Gold and Bravo Awrds
@@ -67,7 +77,11 @@ function Hero() {
             <motion.button className="hero__button" variants={textVariants}>
               See the latest Works
             </motion.button>
-            <motion.button className="hero__button" variants={textVariants}>
+            <motion.button
+              className="hero__button"
+              variants={textVariants}
+              onClick={downloadResume}
+            >
               Resume
             </motion.button>
           </motion.div>
