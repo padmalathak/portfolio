@@ -30,6 +30,11 @@ function Contact() {
             Let's Create Magic Together!
           </motion.h1>
           <motion.div variants={variants} className="item">
+            <span>Why are programmers always sitting down?</span>
+            <span>
+              <br></br>If you know the answer or if you want to know it, hit me
+              up with a message !!
+            </span>
             <h2>Mail</h2>
             <span>padmalathalakshmi@gmail.com</span>
           </motion.div>

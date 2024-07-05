@@ -58,10 +58,10 @@ function Hero() {
           <motion.p className="hero__description" variants={textVariants}>
             [“hip”,”hip”](hip hip array!)😁 Well,come ! <br></br>3 years of work
             experience as a software developer and Cookie💻 is my favorite
-            snack! Why are programmers always sitting down?
+            snack!
             <p>
-              Holder of prestigious awards such as the Outstanding Engineer
-              Award, Top Flyer Award , Gold and Bravo Awrds
+              I am also Holder of prestigious awards such as the Outstanding
+              Engineer Award, Top Flyer Award , Gold and Bravo Awards
             </p>
           </motion.p>
           <motion.ul className="skills">
@@ -75,7 +75,7 @@ function Hero() {
           </motion.ul>
           <motion.div className="hero__buttons" variants={textVariants}>
             <motion.button className="hero__button" variants={textVariants}>
-              See the latest Works
+              <a href="#Featured">See the latest Works</a>
             </motion.button>
             <motion.button
               className="hero__button"

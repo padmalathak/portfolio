@@ -40,7 +40,7 @@ const Single = ({ item }) => {
 
   return (
     <section>
-      <div className="container">
+      <div className="container" id="Featured">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
