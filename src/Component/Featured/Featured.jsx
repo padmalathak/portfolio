@@ -37,7 +37,13 @@ const Single = ({ item }) => {
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-
+  const handlePorjectClick = (id) => {
+    let url = "";
+    if (id === 1) {
+      url = "https://github.com/padmalathak/eHub/blob/main/README.md";
+    }
+    window.open(url, "_blank");
+  };
   return (
     <section>
       <div className="container" id="Featured">
@@ -48,7 +54,11 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            {item.id !== 2 && (
+              <button onClick={() => handlePorjectClick(item.id)}>
+                Github Link
+              </button>
+            )}
           </motion.div>
         </div>
       </div>
