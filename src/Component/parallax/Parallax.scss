@@ -1,3 +1,4 @@
+@use "../../Styles/partials/mixins" as *;
 .parallax {
   background: linear-gradient(180deg, #111132, #0c0c1d);
   width: 100%;
@@ -9,7 +10,10 @@
   overflow: hidden;
 
   &__title {
-    font-size: 100px;
+    font-size: 50px;
+    @include tablet {
+      font-size: 100px;
+    }
   }
   &__mountain {
     position: absolute;

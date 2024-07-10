@@ -10,7 +10,7 @@ import Cursor from "../../Component/Cursor/Cursor";
 function HomePage() {
   return (
     <div>
-      <Cursor />
+      {/* <Cursor /> */}
       <Hero />
       <Parallax />
       <Timeline />
