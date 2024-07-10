@@ -28,9 +28,8 @@
 }
 
 .logo {
-  height: 20px;
+  height: 25px;
   border-radius: 5px;
-  background-color: white;
 
   @include tablet {
     height: 35px;
@@ -40,5 +39,12 @@
   &__github {
     background-color: white;
     border-radius: 50%;
+  }
+}
+
+.Padma-logo {
+  height: 35px;
+  @include tablet {
+    height: 60px;
   }
 }

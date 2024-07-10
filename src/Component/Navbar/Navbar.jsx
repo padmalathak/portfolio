@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import linkedIn from "../../assets/logo/linkedin.svg";
 import github from "../../assets/logo/github.svg";
 import instagram from "../../assets/logo/instagram.png";
+import Padma from "../../assets/logo/logo-transparent-png.png";
 
 import Sidebar from "../Sidebar/Sidebar";
 
@@ -17,7 +18,7 @@ function Navbar() {
           transition={{ duration: 0.5 }}
           className="title"
         >
-          Padma Tech
+          <img src={Padma} alt="Padma Tech" className="Padma-logo"></img>
         </motion.span>
         <div className="socials">
           <a
