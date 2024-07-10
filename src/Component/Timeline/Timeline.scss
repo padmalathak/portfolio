@@ -78,15 +78,21 @@
 }
 
 .timeline-content h1 {
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 700;
   line-height: 30px;
   margin-bottom: 10px;
+  @include tablet {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
 }
 .timeline-content p {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 300;
+  @include tablet {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
 }
 .timeline-content .date {
   font-size: 12px;
