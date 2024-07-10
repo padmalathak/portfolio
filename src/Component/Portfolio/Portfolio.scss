@@ -1,6 +1,8 @@
 @use "../../Styles/partials/mixins" as *;
 .Portfolio {
-  margin-top: 10rem;
+  @include tablet {
+    margin-top: 10rem;
+  }
 }
 .services {
   background: linear-gradient(180deg, #0c0c1d, #4a155f);
@@ -28,12 +30,12 @@
     p {
       padding-top: 3rem;
       font-size: 15px;
+      color: gray;
 
       @include tablet {
         font-size: 20px;
         text-align: right;
         padding-top: 1rem;
-        color: gray;
       }
 
       .rainbow {
@@ -200,9 +202,4 @@
       }
     }
   }
-}
-
-.cute-smile {
-  color: orange;
-  font-size: 50px;
 }
