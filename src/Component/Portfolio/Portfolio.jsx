@@ -20,7 +20,7 @@ const draw = {
 
 const variants = {
   initial: {
-    x: -500,
+    x: -100,
     opacity: 0,
   },
   animate: {
@@ -35,7 +35,7 @@ const variants = {
 
 function Portfolio() {
   const ref = useRef();
-  const isInView = useInView(ref, { margin: "-100px" });
+  const isInView = useInView(ref, { margin: "-50px" });
   return (
     <div id="Portfolio" className="Portfolio">
       <motion.div
@@ -46,10 +46,10 @@ function Portfolio() {
         animate={isInView && "animate"}
       >
         <motion.div className="textContainer" variants={variants}>
-          <p>
+          <p className="cute-smile">
             Along with my technical skills, I also bring
-            <br /> warmth, a positive attitude and a cute smile to every team I
-            join.
+            <br /> warmth, a positive attitude and{" "}
+            <span className="rainbow">a cute smile</span> to every team I join.
           </p>
           <hr />
         </motion.div>
@@ -87,7 +87,8 @@ function Portfolio() {
               into completely new assignments, and has demonstrated ownership
               and productivity in a very short turn around time
             </p>
-            <button>Go</button>
+            <hr />
+            {/* <button>Go</button> */}
           </motion.div>
           <motion.div
             className="box"
@@ -103,7 +104,7 @@ function Portfolio() {
               significantly contributed to our successful completion of the
               Bootcamp.
             </p>
-            <button>Go</button>
+            <hr></hr>
           </motion.div>
           <motion.div
             className="box"
@@ -117,7 +118,7 @@ function Portfolio() {
               completed assignments on time. She used to be calm and productive
               during intense crunch periods. Such an amazing team player.
             </p>
-            <button>Go</button>
+            <hr></hr>
           </motion.div>
           <motion.div
             className="box"
@@ -129,7 +130,6 @@ function Portfolio() {
               her will be solved in no time. Her attitude and energy is always
               inspired by team. She has been always a value adding resource.
             </p>
-            <button>Go</button>
           </motion.div>
         </motion.div>
       </motion.div>

@@ -30,18 +30,35 @@
       font-size: 15px;
 
       @include tablet {
-        font-weight: 200;
         font-size: 20px;
-        color: gray;
         text-align: right;
         padding-top: 1rem;
+        color: gray;
+      }
+
+      .rainbow {
+        background: linear-gradient(
+          to right,
+          #ef5350,
+          #f48fb1,
+          #7e57c2,
+          #2196f3,
+          #26c6da,
+          #43a047,
+          #eeff41,
+          #f9a825,
+          #ff5722
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
 
     hr {
       width: 300px;
-      border: none;
+      // border: none;
       border-top: 0.5px solid gray;
+      padding-top: 1rem;
 
       @include tablet {
         width: 500px;
@@ -134,10 +151,10 @@
       justify-content: space-between;
       width: 100%;
 
-      border: none;
       align-items: center;
       gap: 20px;
       padding: 10px;
+      border-bottom: 1px solid gray;
 
       @include tablet {
         border: 0.5px solid gray;
@@ -153,7 +170,7 @@
       //   }
 
       p {
-        display: none;
+        // display: none;
 
         @include tablet {
           display: unset;
@@ -183,4 +200,9 @@
       }
     }
   }
+}
+
+.cute-smile {
+  color: orange;
+  font-size: 50px;
 }
