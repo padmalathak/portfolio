@@ -51,7 +51,7 @@ function Contact() {
       >
         <motion.div className="textContainer" variants={variants}>
           <motion.h1 variants={variants}>
-            Let's Create Magic Together!
+            Let's Create <span className="rainbow">Magic</span> Together!
           </motion.h1>
           <motion.div variants={variants} className="item">
             <marquee className="question">
