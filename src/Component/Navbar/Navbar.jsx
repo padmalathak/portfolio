@@ -32,7 +32,7 @@ function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={github} alt="github" className="logo" />
+            <img src={github} alt="github" className="logo__github logo" />
           </a>
           <a
             href="https://leetcode.com/u/padmaviki/"

@@ -1,3 +1,5 @@
+@use "../../Styles/partials/mixins" as *;
+
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -10,15 +12,33 @@
 .title {
   font-weight: bold;
   margin-left: 2rem;
+
+  @include tablet {
+    font-size: 2rem;
+  }
 }
 
 .socials {
   display: flex;
   gap: 0.5rem;
+
+  @include tablet {
+    gap: 2rem;
+  }
 }
 
 .logo {
   height: 20px;
   border-radius: 5px;
   background-color: white;
+
+  @include tablet {
+    height: 35px;
+    background-color: black;
+  }
+
+  &__github {
+    background-color: white;
+    border-radius: 50%;
+  }
 }
