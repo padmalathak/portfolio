@@ -54,21 +54,23 @@ function Contact() {
             Let's Create Magic Together!
           </motion.h1>
           <motion.div variants={variants} className="item">
-            <span>Why are programmers always sitting down?</span>
+            <marquee className="question">
+              Why are programmers always sitting down?
+            </marquee>
             <span>
               <br></br>If you know the answer or if you want to know it, hit me
               up with a message !!
             </span>
             <h2>Mail</h2>
-            <span>padmalathalakshmi@gmail.com</span>
+            <span className="question">padmalathalakshmi@gmail.com</span>
           </motion.div>
           <motion.div variants={variants} className="item">
             <h2>Address</h2>
-            <span>Langley,BC</span>
+            <span className="question">Langley,BC</span>
           </motion.div>
           <motion.div variants={variants} className="item">
             <h2>Phone</h2>
-            <span>+16047247962</span>
+            <span className="question">+16047247962</span>
           </motion.div>
         </motion.div>
         <div className="formContainer">
@@ -80,7 +82,7 @@ function Contact() {
               placeholder="Email"
               name="user_email"
             />
-            <textarea rows={8} placeholder="Message" name="message" />
+            <textarea rows={6} placeholder="Message" name="message" />
             <button>Submit</button>
             {error && "Not Sent"}
             {success && "Success"}
