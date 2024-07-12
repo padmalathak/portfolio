@@ -13,17 +13,25 @@ const items = [
     id: 2,
     title: "iLAB",
     img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: `Developed a web application offering real-time bench usage statistics for
+            accounting revenue from clients, which reclaims $1 million USD relaxed
+  revenue per quarter.It is highly scalable , maintainable and lightweight
+  application for remotely booking benches , rescheduling , canceling and
+  consecutive slot management using NodeJS and MongoDB. Internal Tool developed at Honeywell`,
   },
   {
     id: 3,
     title: "inStock",
     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: `Streamline and optimize the processes of tracking, managing, and organizing inventory within a warehouse. This application aims to enhance operational efficiency, minimize errors, reduce costs, and improve overall
+     productivity by providing a comprehensive and user-friendly 
+    platform for real-time inventory management. Key functionalities include automated inventory tracking, order processing, stock level monitoring, reporting, and analytics, ensuring that businesses can 
+    maintain accurate inventory records, prevent stockouts or overstock situations, 
+    and make data-driven decisions to support their supply chain operations.`,
   },
   {
     id: 4,
-    title: "Music App",
+    title: "TripPilot",
     img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
