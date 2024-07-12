@@ -49,6 +49,9 @@ const Single = ({ item }) => {
     let url = "";
     if (id === 1) {
       url = "https://github.com/padmalathak/eHub/blob/main/README.md";
+    } else if (id === 4) {
+      url =
+        "https://www.figma.com/design/CKERIpXmzdm8b1r1l6YPRI/TripPilot---MockUp?node-id=1928-8&t=b7bNQvwjvrScejrC-0";
     }
     window.open(url, "_blank");
   };
@@ -63,9 +66,7 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             {item.id !== 2 && (
-              <button onClick={() => handlePorjectClick(item.id)}>
-                Github Link
-              </button>
+              <button onClick={() => handlePorjectClick(item.id)}>View</button>
             )}
           </motion.div>
         </div>
