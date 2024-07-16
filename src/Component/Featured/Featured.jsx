@@ -1,18 +1,22 @@
 import { useRef } from "react";
 import "./Featured.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import inStock from "../../assets/imgs/InStock.png";
+import ehub from "../../assets/imgs/eHub.png";
+import tripPilot from "../../assets/imgs/TripPilot.png";
+import ilab from "../../assets/imgs/iLab.png";
 
 const items = [
   {
     id: 1,
     title: "eHUB",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: `${ehub}`,
     desc: "This dashboard provides administrators with powerful tools to manage users and their permissions within our system. With integrated login functionality, administrators can securely access the dashboard and perform their tasks efficiently.",
   },
   {
     id: 2,
     title: "iLAB",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: `${ilab}`,
     desc: `Developed a web application offering real-time bench usage statistics for
             accounting revenue from clients, which reclaims $1 million USD relaxed
   revenue per quarter.It is highly scalable , maintainable and lightweight
@@ -22,7 +26,7 @@ const items = [
   {
     id: 3,
     title: "inStock",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: `${inStock}`,
     desc: `Streamline and optimize the processes of tracking, managing, and organizing inventory within a warehouse. This application aims to enhance operational efficiency, minimize errors, reduce costs, and improve overall
      productivity by providing a comprehensive and user-friendly 
     platform for real-time inventory management. Key functionalities include automated inventory tracking, order processing, stock level monitoring, reporting, and analytics, ensuring that businesses can 
@@ -32,7 +36,7 @@ const items = [
   {
     id: 4,
     title: "TripPilot - In Progress",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: `${tripPilot}`,
     desc: `Are you still using MSExcel to organize your trip information? What if there is an app feature that organizes all your travel info in one place? Then, you are all
     set to explore your dream destination with TripPilot. TripPilot is a cutting edge travel planning app that is designed to assist you in
     organizing, managing, and cooperating on tasks, and information when planning a trip.Tech Stack : React,TypeScript, Node and MongoDB`,
