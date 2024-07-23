@@ -4,6 +4,7 @@
 
   .progress {
     position: sticky;
+    background-color: #061121;
     top: 0;
     left: 0;
     text-align: center;
@@ -12,12 +13,13 @@
     font-size: 24px;
 
     @include tablet {
-      padding-top: 30px;
-      font-size: 36px;
+      padding-top: 2rem;
+      font-size: 3rem;
     }
 
     .progressBar {
       height: 10px;
+      margin-top: 2rem;
       background-color: white;
     }
   }
