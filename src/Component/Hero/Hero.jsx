@@ -5,6 +5,7 @@ import resume from "../../assets/Files/PadmaResume.pdf";
 
 import scroll from "../../assets/icons/scroll.png";
 import passport from "../../assets/imgs/passport.png";
+import download from "../../assets/icons/download (3).png";
 import { motion } from "framer-motion";
 
 const textVariants = {
@@ -82,6 +83,7 @@ function Hero() {
               variants={textVariants}
               onClick={downloadResume}
             >
+              <img src={download} alt="download" className="download__img" />
               Resume
             </motion.button>
           </motion.div>
